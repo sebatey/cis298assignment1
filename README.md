@@ -1,4 +1,5 @@
 # Assignment 1 - Your First Application and Introduction to Git
+## Due 9-26-2016
 
 ## Author
 
@@ -7,7 +8,7 @@
 Create a person counter. The UI should have a + button, and a - button as well as a textview to store the value of the current number.
 When the app launches, the counter will be at zero. When the + button is pressed, it will increase the counter. When the - button is pressed, it will decrease the number.
 
-If the counter goes above 20, the app will toast a message that it is over 20.
+If the counter goes above 20, the app will toast a message that it is over 20. This message will only appear when the counter goes over 20. It should not appear for every number over 20, and it should not appear when decrementing regardless of the current number.
 
 Solution Requirements:
 
@@ -26,5 +27,3 @@ The focus with this application should be getting familiar with Android Studio a
 ## Outside Resources Used
 
 ## Known Problems, Issues, And/Or Errors in the Program
-
-
