@@ -24,6 +24,19 @@ Solution Requirements:
 This application should be very similar to the first application in the book.
 The focus with this application should be getting familiar with Android Studio and Git.
 
+## Grading
+| Feature          | Points |
+| ---------------- | ------ |
+| Plus Button      | 10     |
+| Minus Button     | 10     |
+| TextView         | 10     |
+| Strings.xml      | 10     |
+| Plus Works       | 15     |
+| Minus Works      | 15     |
+| TextView Updates | 15     |
+| Toasts Correctly | 15     |
+| Total            | 100    |
+
 ## Outside Resources Used
 
 ## Known Problems, Issues, And/Or Errors in the Program
