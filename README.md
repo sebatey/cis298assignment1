@@ -22,7 +22,6 @@ Solution Requirements:
 ### Notes
 
 This application should be very similar to the first application in the book.
-The focus with this application should be getting familiar with Android Studio and Git.
 
 ## Grading
 | Feature          | Points |
