@@ -4,15 +4,51 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class CounterActivity extends AppCompatActivity {
+
+    private int mCounter = 0;
+
+    private Button mPlusButton;
+    private Button mMinusButton;
+
+    private TextView mCounterTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
+
+        mCounterTextView = (TextView) findViewById(R.id.counter_text_view);
+
+        mPlusButton = (Button) findViewById(R.id.plus_button);
+        mPlusButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                mCounter += 1;
+            }
+        });
+
+        mMinusButton = (Button) findViewById(R.id.minus_button);
+        mMinusButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                mCounter -= 1;
+            }
+        });
+
     }
 
+    private void updateCounterTextView(){
+        mCounterTextView.setText(mCounter);
+    }
+
+
+
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -34,4 +70,5 @@ public class CounterActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }

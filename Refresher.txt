@@ -1,0 +1,22 @@
+dbarneskvcc	- class git
+fork
+clone
+commit
+push
+pull request
+
+ls 						list dir contents
+ls -la 						list dir contents and hidden
+cd 						change directory
+cp 						copy
+mv 						move
+mkdi 						make dir
+rmdir 						remove dir
+cd . 						current dir
+cd .. 						parent dir
+git clone "url here"				bring project down to computer level
+git config --global user.name "Scott Batey"
+git add -A					prepare for commit
+git commit					commit
+git checkout .					discard changes since last commit
+~						home/O drive
