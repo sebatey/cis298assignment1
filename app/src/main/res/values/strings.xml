@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CIS298Assignment1</string>
-
-    <string name="counter_text"></string>
+	<string name="over_twenty_toast">Over Twenty</string>
+    <string name="counter_text">0</string>
     <string name="plus_button">+</string>
     <string name="minus_button">-</string>
     <string name="action_settings">Settings</string>

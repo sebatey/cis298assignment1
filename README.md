@@ -1,7 +1,7 @@
 # Assignment 1 - Your First Application and Introduction to Git
 ## Due 9-26-2016
 
-## Author
+## Author: Scott Batey
 
 ## Description
 
@@ -36,6 +36,6 @@ This application should be very similar to the first application in the book.
 | Toasts Correctly | 15     |
 | Total            | 100    |
 
-## Outside Resources Used
+## Outsside Resources Used: In Class Assignment Notes
 
-## Known Problems, Issues, And/Or Errors in the Program
+## Known Problems, Issues, And/Or Errors in the Program: N/A

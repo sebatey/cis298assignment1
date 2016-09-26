@@ -7,16 +7,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CounterActivity extends AppCompatActivity {
 
+	/////////////////////////////////////////////////////////
+	/////////////////////// Variables ///////////////////////
+	/////////////////////////////////////////////////////////
+
     private int mCounter = 0;
+    int messageResId = R.string.over_twenty_toast;
 
     private Button mPlusButton;
     private Button mMinusButton;
 
     private TextView mCounterTextView;
 
+	
+	/////////////////////////////////////////////////////////
+	//////////////////////// Methods ////////////////////////
+	/////////////////////////////////////////////////////////
+		
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +39,17 @@ public class CounterActivity extends AppCompatActivity {
         mPlusButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+				
+				//Update the counter and the TextView
                 mCounter += 1;
+				updateCounterTextView();
+				
+				//When mCounter is equal to 21 Toast
+				//Only in mPlusButton to prevent messages
+				//when subtracting from mCounter
+				if(mCounter == 21){
+					//Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
+				}
             }
         });
 
@@ -36,7 +57,10 @@ public class CounterActivity extends AppCompatActivity {
         mMinusButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+				
+				//Update the counter and the TextView
                 mCounter -= 1;
+				updateCounterTextView();
             }
         });
 
@@ -46,9 +70,11 @@ public class CounterActivity extends AppCompatActivity {
         mCounterTextView.setText(mCounter);
     }
 
-
-
-    /*
+		
+    /////////////////////////////////////////////////////////
+	/////////////////////// Generated ///////////////////////
+    /////////////////////////////////////////////////////////
+	
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -70,5 +96,5 @@ public class CounterActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    */
+    
 }
